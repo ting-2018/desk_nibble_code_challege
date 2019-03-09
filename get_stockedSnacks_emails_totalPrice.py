@@ -21,20 +21,16 @@ total_price = 0
 
 
 for snacker in data_snackers:
-    # print(snacker['fave_snack'])
     for product in products:
         if snacker['fave_snack'] == product['title']:
-            # print(snacker['fave_snack'])
-            # print(snacker)
             emails.append(snacker['email'])
-            # print(product)
 
             if snacker['fave_snack'] not in fave_snack_stocked:
                 fave_snack_stocked.append(snacker['fave_snack'])
 
             for variant in product['variants']:
-                # print(variant['price'])
                 total_price += float(variant['price'])
+                
 print(fave_snack_stocked)
 print(emails)
 print(total_price)

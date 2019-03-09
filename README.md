@@ -1,4 +1,4 @@
-# desk_nibble_code_challege
+# desk_nibbles_code_challege
 quesion a:
 ["Bobo's Oat Bars", 'Clif Crunch Bar']
 
